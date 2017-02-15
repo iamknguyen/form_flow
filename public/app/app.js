@@ -29,6 +29,11 @@ function config ($stateProvider, $urlRouterProvider) {
       url: '/finish',
       templateUrl: 'app/components/form.finish/form.finish.html',
       controller: 'SplashCtrl as vm'
+    })
+    .state('submitted', {
+      url: '/submitted',
+      templateUrl: 'app/components/submitted/submitted.html',
+      controller: 'SplashCtrl as vm'
     });
 }
 
