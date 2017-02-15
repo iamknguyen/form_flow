@@ -1,0 +1,17 @@
+<!--<form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>-->
+  <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" name="name" ng-model="vm.formData.name" required>
+      <!--<p ng-show="userForm.name.$invalid && !userForm.name.$pristine">Your name is required.</p>-->
+  </div>
+<!--</form>-->
+
+
+  <div class="form-group row">
+  <div class="col-xs-6 col-xs-offset-3">
+      <a ng-click="vm.store('name')" ui-sref="email" class="btn btn-block btn-info">
+      Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+      </a>
+  </div>
+  
+</div>

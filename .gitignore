@@ -1,0 +1,9 @@
+node_modules
+public/lib
+.env
+
+bower_components/
+*.log
+
+build/
+dist/

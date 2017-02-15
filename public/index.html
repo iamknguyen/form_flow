@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Flow App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+
+    <div ng-app="formApp">
+
+
+      <div class="container">
+          <div class="page-header text-center">
+                <h2>Form Flow App</h2>
+                
+                <div id="status-buttons" class="text-center">
+                    <a ui-sref-active="active" ui-sref="splash"><span>1</span>Splash</a>
+                    <a ui-sref-active="active" ui-sref="email"><span>2</span> Email</a>
+                    <a ui-sref-active="active" ui-sref="finish"><span>3</span> Finish</a>
+                </div>
+            </div>
+          <div ui-view></div>
+      </div>
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/darkly/bootstrap.min.css">
+      <link rel="stylesheet" href="app/styles.css">
+
+      <script src="lib/angular/angular.min.js"></script>
+      <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+      <script src="app/app.js"></script>
+      <script src="app/common/helpers.js"></script>
+      <script src="app/components/splash/splash.controller.js"></script>
+
+    </div>
+</body>

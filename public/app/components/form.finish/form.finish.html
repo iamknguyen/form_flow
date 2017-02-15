@@ -1,0 +1,13 @@
+<div class="text-center">
+    <!--<a ng-click="vm.getStore()" class="btn btn-block btn-info">
+     CHECK 
+    </a>-->
+    <h3 ng-show={{!vm.validName}}>Please Enter a Valid Name</h3>
+    <h3 ng-show={{!vm.validEmail}}>Please Enter a Valid Email</h3>
+    <a ui-sref="email" class="btn btn-block btn-info">
+      <span class="glyphicon glyphicon-circle-arrow-left"></span> Go Back 
+    </a>
+    <p></p>
+    <button ng-click='vm.finish()' ng-show={{vm.formComplete}} type="submit form" class="btn btn-danger">Submit</button>
+
+</div>
